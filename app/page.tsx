@@ -471,6 +471,18 @@ export default function HomePage() {
               className="mt-10 flex items-center gap-4 pt-8"
               style={{ borderTop: "1px solid hsl(var(--border) / 0.7)" }}
             >
+              <div
+                className="overflow-hidden rounded-full"
+                style={{ border: "1px solid hsl(var(--border))", boxShadow: "0 18px 34px -24px hsl(var(--foreground) / 0.16)" }}
+              >
+                <Image
+                  src="/images/founder.png"
+                  alt="Ken Beaudin"
+                  width={64}
+                  height={64}
+                  className="h-16 w-16 object-cover"
+                />
+              </div>
               <div>
                 <p className="text-xl font-semibold tracking-tight sm:text-2xl">Ken Beaudin</p>
                 <p className="mt-1 text-base" style={{ color: "hsl(var(--muted-foreground))" }}>
