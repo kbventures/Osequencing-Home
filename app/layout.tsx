@@ -19,14 +19,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${geist.className} h-full`}>
-      <body className="min-h-full flex flex-col bg-[#f0efe8] text-[#121212] antialiased">
+      <body
+        className="min-h-full flex flex-col antialiased"
+        style={{
+          backgroundColor: "hsl(var(--background))",
+          color: "hsl(var(--foreground))",
+        }}
+      >
         {children}
       </body>
     </html>
