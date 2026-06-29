@@ -127,6 +127,7 @@ export default function HomePage() {
                 priority
                 unoptimized
               />
+
             </div>
           <div className="flex flex-col items-center text-center gap-6 lg:w-3/4 lg:items-start lg:text-left">
             <span
@@ -481,6 +482,7 @@ export default function HomePage() {
                   width={64}
                   height={64}
                   className="h-16 w-16 object-cover"
+                  unoptimized
                 />
               </div>
               <div>
