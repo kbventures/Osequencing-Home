@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Bot,
   Brain,
@@ -115,7 +116,19 @@ export default function HomePage() {
                 "linear-gradient(to bottom, hsl(var(--primary-soft) / 0.7), hsl(var(--info-soft) / 0.3), transparent)",
             }}
           />
-          <div className="relative flex flex-col items-center text-center gap-6 max-w-3xl mx-auto">
+          <div className="relative flex flex-col items-center gap-8 lg:flex-row lg:items-center lg:gap-6">
+            <div className="flex shrink-0 items-center justify-center lg:order-last lg:w-1/4">
+              <Image
+                src="/logo-transparent.png"
+                alt="Osequencing"
+                width={180}
+                height={180}
+                className="h-auto w-24 sm:w-32 lg:w-full lg:max-w-[160px]"
+                priority
+                unoptimized
+              />
+            </div>
+          <div className="flex flex-col items-center text-center gap-6 lg:w-3/4 lg:items-start lg:text-left">
             <span
               className="inline-flex items-center rounded-full px-4 py-1.5 text-xs font-medium"
               style={{
@@ -170,6 +183,7 @@ export default function HomePage() {
                 About the founder
               </a>
             </div>
+          </div>
           </div>
         </div>
       </section>
