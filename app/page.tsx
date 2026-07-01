@@ -552,7 +552,7 @@ export default function HomePage() {
           style={{ color: "hsl(var(--muted-foreground))" }}
         >
           <span>© {new Date().getFullYear()} Osequencing</span>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             <a
               href="https://outreach.osequencing.com"
               className="transition-colors hover:text-current"
@@ -564,6 +564,12 @@ export default function HomePage() {
               className="transition-colors hover:text-current"
             >
               Engine
+            </a>
+            <a href="/privacy" className="transition-colors hover:text-current">
+              Privacy
+            </a>
+            <a href="/terms" className="transition-colors hover:text-current">
+              Terms
             </a>
           </div>
         </div>
